@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @todo_item.name %>
+</p>
+
+<p>
+  <b>Due at:</b>
+  <%= @todo_item.due_at %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @todo_item.completed %>
+</p>
+
+<p>
+  <b>Deleted:</b>
+  <%= @todo_item.deleted %>
+</p>
+
+
+<%= link_to 'Edit', edit_todo_item_path(@todo_item) %> |
+<%= link_to 'Back', todo_items_path %>
