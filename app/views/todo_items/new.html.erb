@@ -2,4 +2,22 @@
 
 <%= render 'form' %>
 
+<h1>Listing todo_items</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Due at</th>
+  </tr>
+
+<% @todo_items.each do |todo_item| %>
+  <tr>
+    <td><%= todo_item.id %></td>
+    <td><%= todo_item.name %></td>
+    <td><%= todo_item.due_at %></td>
+  </tr>
+<% end %>
+</table>
+
 <%= link_to 'Back', todo_items_path %>

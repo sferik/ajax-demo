@@ -24,6 +24,7 @@ class TodoItemsController < ApplicationController
   # GET /todo_items/new
   # GET /todo_items/new.json
   def new
+    @todo_items = TodoItem.all
     @todo_item = TodoItem.new
 
     respond_to do |format|
